@@ -124,3 +124,4 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init -)"
 
 export PATH=$PATH:/Users/macrespo/.spicetify
+export GPG_TTY=/dev/ttys000

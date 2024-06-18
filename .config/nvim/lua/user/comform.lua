@@ -1,6 +1,6 @@
 require("conform").setup({
   formatters_by_ft = {
-    python = { "isort", "black" },
+    python = { "ruff" },
     javascript = { "prettier" },
     typescript = { 'prettier' },
     typescriptreact = { 'prettier' },
