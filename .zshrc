@@ -75,6 +75,7 @@ plugins=(
 	autojump
   zsh-syntax-highlighting
 	zsh-autosuggestions
+  poetry
 )
 
 source $ZSH/oh-my-zsh.sh

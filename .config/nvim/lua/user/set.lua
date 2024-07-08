@@ -37,6 +37,7 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.colorcolumn = "120"
 vim.g.mapleader = " "
 vim.opt.updatetime = 50
+vim.opt.mouse = ""
 
 -- Providers
 vim.g.python3_host_prog = '~/.pyenv/versions/3.12.1/bin/python'

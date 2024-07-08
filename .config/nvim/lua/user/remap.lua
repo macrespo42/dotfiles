@@ -46,6 +46,9 @@ vim.keymap.set("n", "<Right>", "", opts)
 vim.keymap.set("n", "<Up>", "", opts)
 vim.keymap.set("n", "<Down>", "", opts)
 
+--remap echap
+vim.keymap.set("i", "jk", "<ESC>", opts)
+
 -- Trouble
 vim.keymap.set("n", "<leader>xx", function() require("trouble").toggle() end)
 vim.keymap.set("n", "<leader>xw", function() require("trouble").toggle("workspace_diagnostics") end)

@@ -50,9 +50,14 @@ require('mason-lspconfig').setup({
           }
         },
         settings = {
+          pyright = {
+            -- Using Ruff's import organizer
+            disableOrganizeImports = true,
+          },
           python = {
             analysis = {
-              typeCheckingMode = "off"
+              typeCheckingMode = "off",
+              ignore = { '*' },
             }
           },
         }
@@ -60,6 +65,16 @@ require('mason-lspconfig').setup({
     end
   }
 })
+
+local on_attach = function(client, bufnr)
+  if client.name == 'ruff' then
+    client.server_capabilities.hoverProvider = false
+  end
+end
+
+require('lspconfig').ruff.setup {
+  on_attach = on_attach,
+}
 
 local cmp = require('cmp')
 

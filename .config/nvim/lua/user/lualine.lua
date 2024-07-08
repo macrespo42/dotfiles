@@ -1,5 +1,5 @@
 require("lualine").setup({
-  options = { theme = "rose-pine", component_separators = "|" },
+  options = { theme = "catppuccin-macchiato", component_separators = "|" },
   sections = {
     lualine_a = { "mode" },
     lualine_b = { "branch", "diff", "diagnostics" },
