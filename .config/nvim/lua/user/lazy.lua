@@ -14,16 +14,6 @@ vim.opt.rtp:prepend(lazypath)
 return require("lazy").setup({
   -- Styles
   "nvim-tree/nvim-web-devicons",
-  -- {
-  --   "rose-pine/neovim",
-  --   name = "rose-pine",
-  --   lazy = false,
-  --   priority = 1000,
-  --   config = function()
-  --     vim.cmd("colorscheme rose-pine")
-  --   end,
-  -- },
-  --
   {
     "catppuccin/nvim",
     name = "catppuccin",
@@ -93,18 +83,6 @@ return require("lazy").setup({
     },
   },
 
-  -- UI
-  {
-    "folke/noice.nvim",
-    event = "VeryLazy",
-    opts = {},
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-      "rcarriga/nvim-notify",
-    }
-  },
-
-
   {
     "nvim-lualine/lualine.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -114,7 +92,6 @@ return require("lazy").setup({
     "nvim-treesitter/nvim-treesitter",
     --build = ":TSUpdate"
   },
-  -- END OF UI
 
 
   -- Navigations
