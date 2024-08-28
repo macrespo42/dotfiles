@@ -126,3 +126,6 @@ eval "$(pyenv init -)"
 
 export PATH=$PATH:/Users/macrespo/.spicetify
 export GPG_TTY=/dev/ttys000
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
