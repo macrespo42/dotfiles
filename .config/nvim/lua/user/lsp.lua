@@ -20,7 +20,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 require('mason-lspconfig').setup({
   ensure_installed = {
     'lua_ls',
-    'tsserver',
+    'ts_ls',
   },
   handlers = {
     function(server_name)

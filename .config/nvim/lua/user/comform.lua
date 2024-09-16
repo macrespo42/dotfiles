@@ -5,6 +5,7 @@ require("conform").setup({
     typescript = { 'prettier' },
     typescriptreact = { 'prettier' },
     javascriptreact = { 'prettier' },
+    go = { 'gofumpt' }
   },
   format_on_save = {
     timeout_ms = 10000,
