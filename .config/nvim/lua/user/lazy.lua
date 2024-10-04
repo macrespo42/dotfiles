@@ -15,12 +15,12 @@ return require("lazy").setup({
   -- Styles
   "nvim-tree/nvim-web-devicons",
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
+    "rose-pine/neovim",
+    name = "rose-pine",
     priority = 1000,
 
     config = function()
-      vim.cmd("colorscheme catppuccin-latte")
+      vim.cmd("colorscheme rose-pine-dawn")
     end,
   },
 
