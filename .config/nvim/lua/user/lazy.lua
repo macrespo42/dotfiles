@@ -68,7 +68,7 @@ return require("lazy").setup({
     "mfussenegger/nvim-lint",
     event = "VeryLazy",
     config = function()
-      require "lint"
+      -- Pas besoin de refaire un `require` ici, il est déjà dans l'autre partie
     end
   },
 
