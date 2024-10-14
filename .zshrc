@@ -110,7 +110,6 @@ alias python="python3"
 alias pip3="pip"
 alias d="docker"
 alias dClean='docker rmi $(docker images -a); docker volume rm $(docker volume ls -a)'
-alias ls="lsd"
 
 eval "$(starship init zsh)"
 

@@ -24,23 +24,6 @@ return require("lazy").setup({
     end,
   },
 
-  {
-    "luxus/colorful-times-nvim",
-    enabled = true,
-    lazy = false, -- Load the plugin immediately
-    opts = {
-      default = {
-        colorscheme = "rose-pine-dawn",
-        background = "system",
-      },
-      schedule = {
-        { start = "07:00", stop = "18:00", colorscheme = "rose-pine-dawn" },
-        { start = "18:00", stop = "07:00", colorscheme = "rose-pine" },
-      },
-      refresh_time = 5000, -- Refresh time in milliseconds
-    },
-  },
-
   -- LSP
   {
     "williamboman/mason-lspconfig.nvim",
