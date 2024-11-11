@@ -4,6 +4,7 @@ lint.linters_by_ft = {
   python = { 'ruff' },
   javascript = { 'eslint' },
   typescript = { 'eslint' },
+  go = { 'staticcheck' }
 }
 
 vim.api.nvim_create_autocmd({ "BufWritePost", "InsertLeave" }, {

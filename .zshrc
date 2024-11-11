@@ -128,3 +128,4 @@ export GPG_TTY=/dev/ttys000
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+. "/Users/macrespo/.deno/env"
