@@ -13,7 +13,7 @@ alias lzg="lazygit"
 alias vim="nvim"
 
 # better built-in
-alias cat="bat"
+alias cat="bat --theme=Dracula"
 alias ls="lsd"
 
 export oracle="79.72.31.124"
