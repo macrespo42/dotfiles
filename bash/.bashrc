@@ -12,7 +12,15 @@ alias lzd="lazydocker"
 alias lzg="lazygit"
 alias vim="nvim"
 
+# better built-in
+alias cat="bat"
+alias ls="lsd"
+
 export oracle="79.72.31.124"
 export PATH=$PATH:$(go env GOPATH)/bin
 
 eval "$(starship init bash)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
