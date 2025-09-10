@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
@@ -72,11 +70,10 @@ return {
           end,
           desc = "Close buffer from tabline",
         },
-
-        ["<C-l>"] = { ":vertical resize +3<cr>", desc = "Buffer vertical resize +" },
-        ["<C-h>"] = { ":vertical resize -3<cr>", desc = "Buffer vertical resize -" },
-        ["<C-j>"] = { ":resize -3<cr>", desc = "Buffer horizontal resize -" },
-        ["<C-k"] = { ":resize +3<cr>", desc = "" },
+        ["<C-l>"] = { "<Cmd>vertical resize +3<cr>", desc = "Buffer vertical resize +" },
+        ["<C-h>"] = { "<Cmd>vertical resize -3<cr>", desc = "Buffer vertical resize -" },
+        ["<C-j>"] = { "<Cmd>resize -3<cr>", desc = "Buffer horizontal resize -" },
+        ["<C-k"] = { "<Cmd>resize +3<cr>", desc = "" },
 
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus
@@ -86,8 +83,8 @@ return {
         -- ["<C-S>"] = false,
       },
       v = {
-        ["J"] = { ":m '>+1<CR>gv=gv", desc = "Move line down" },
-        ["K"] = { ":m '<-2<CR>gv=gv", desc = "Move line up" },
+        ["J"] = { "<Cmd>move '>+1<CR>gv=gv", desc = "Move selection down" },
+        ["K"] = { "<Cmd>move '<-2<CR>gv=gv", desc = "Move selection up" },
         ["<"] = { "<gv", desc = "Indent left" },
         [">"] = { ">gv", desc = "Indent right" },
       },
