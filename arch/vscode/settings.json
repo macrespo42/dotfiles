@@ -25,6 +25,7 @@
     "editor.lineNumbers": "relative",
     "vim.leader": "<Space>",
     "vim.hlsearch": true,
+    "vim.useSystemClipboard": true,
     "vim.normalModeKeyBindingsNonRecursive": [
         // NAVIGATION
         // switch b/w buffers
